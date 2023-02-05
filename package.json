@@ -1,24 +1,24 @@
 {
-  "name": "hw-js-10",
+  "name": "js-hw-09",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://malk0v.github.io/hw-js-10",
-  "predeploy": "npm run build -- --public-url='/js-hw-10/'",
+  "homepage": "https://github.com/Malk0v/js-hw-10",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /hw-js-10/"
+    "build": "parcel build src/*.html --public-url/js-hw-10/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/malk0vy/hw-js-10.git"
+    "url": "git+https://github.com/Malk0v/js-hw-10"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anton Malkov <antonio,izym@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/malk0v/hw-js-10/issues"
+    "url": "https://github.com/Malk0v"
   },
   "dependencies": {
+    "json5": "^2.2.3",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
@@ -26,5 +26,6 @@
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
