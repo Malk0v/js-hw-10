@@ -30,7 +30,7 @@ const menuMarkup = menuItems
 
       <ul class="tag-list">
         
-        <li class="tag-list__item"> ${ingredients} </li>
+        <li class="tag-list__item"> ${ingredients} </li >
        
       </ul>
     </div>
@@ -42,5 +42,14 @@ const menuMarkup = menuItems
 </li>`;
   })
   .join('');
+
+  const ingredient = menuItems => {
+    menuItems
+      .map(ingredient => {
+        return `<li class="tag-list__item"> ${ingredient} </li >`;
+      })
+      .join('');
+  };
+
 
 menuRef.insertAdjacentHTML('beforeend', menuMarkup);
