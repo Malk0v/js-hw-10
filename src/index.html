@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="../src/sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <include src="./partials/example.html"></include>
+    <article class="example" id="uk">
+  <ul class="gallery js-gallery"></ul>
+    <div class="lightbox js-lightbox">
+      <div class="lightbox__overlay"></div>
+      <div class="lightbox__content">
+      </div>
+
+      <button
+        type="button"
+        class="lightbox__button"
+        data-action="close-lightbox"
+      ></button>
+    </div>
+</article>
+
   </body>
 </html>
