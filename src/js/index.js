@@ -23,7 +23,7 @@ const menuMarkup = menuItems
     <div class="card__content">
       <h2 class="card__name">${name}</h2>
       <p class="card__price">
-        ${price}  ye
+        ${price} ye
       </p>
 
       <p class="card__descr"> ${description}</p>
@@ -43,13 +43,12 @@ const menuMarkup = menuItems
   })
   .join('');
 
-  const ingredient = menuItems => {
-    menuItems
-      .map(ingredient => {
-        return `<li class="tag-list__item"> ${ingredient} </li >`;
-      })
-      .join('');
-  };
-
+const ingredient = menuItems => {
+  menuItems
+    .map(ingredient => {
+      return `<li class="tag-list__item"> ${ingredient} </li >`;
+    })
+    .join('');
+};
 
 menuRef.insertAdjacentHTML('beforeend', menuMarkup);
